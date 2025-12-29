@@ -1,4 +1,4 @@
-import { loadHeader } from "/js/ui.js";
+import { loadHeader } from "./js/ui.js";
 
 let currentPage = 1;
 const itemsPerPage = 10;
@@ -419,4 +419,5 @@ function renderPagination(container, totalPages) {
   }));
 
   container.appendChild(ul);
+
 }
