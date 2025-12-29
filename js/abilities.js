@@ -1,5 +1,5 @@
 
-import { loadHeader } from "./js/ui.js";
+import { loadHeader } from "./ui.js";
 
 let currentPage = 1;
 const itemsPerPage = 10;
@@ -443,3 +443,4 @@ function toggleHiddenLinks(event, targetId) {
 // Ensure toggleHiddenLinks is available to inline handlers even in module scripts
 
 if (typeof window !== 'undefined') { window.toggleHiddenLinks = toggleHiddenLinks; }
+
