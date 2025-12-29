@@ -3,7 +3,7 @@ export function loadHeader() {
   const el = document.getElementById("header");
   if (!el) return;
 
-  fetch("partials/header.html")
+  fetch("../partials/header.html")
     .then((r) => r.text())
     .then((html) => {
       el.innerHTML = html;
