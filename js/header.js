@@ -3,7 +3,7 @@ export async function loadHeader() {
   if (!slot) return;
 
   // RELATIVE path (this is the fix)
-  const url = "partials/header.html";
+  const url = "./partials/header.html";
 
   try {
     const res = await fetch(url, { cache: "no-store" });
@@ -26,3 +26,4 @@ export async function loadHeader() {
       `<div class="alert alert-danger m-0">Failed to load header.</div>`;
   }
 }
+
