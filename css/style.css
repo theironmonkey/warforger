@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Segoe UI';
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+h3 {
+  font-size: 20px;
+  color: #fff;
+  padding: 1rem;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-bg {
+  background-image: url("../assets/background.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dropdown-menu {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-left: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 0.5rem 0.5rem rgba(255, 255, 255, 0.5);
+}
