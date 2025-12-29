@@ -34,7 +34,7 @@ a {
 }
 
 .main-bg {
-  background-image: url("../assets/background.jpg");
+  background-image: url("assets/background.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

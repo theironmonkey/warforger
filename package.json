@@ -23,8 +23,9 @@
     "package manager",
     "package.json"
   ],
-  "homepage": "https://docs.npmjs.com/",
-  "author": "GitHub Inc.",
+
+  "homepage": "https://and1cam.github.io/WarForger",
+  "author": "and1cam",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/npm/cli.git"
@@ -263,3 +264,4 @@
     "node": "^18.17.0 || >=20.5.0"
   }
 }
+
