@@ -2,16 +2,15 @@ export async function loadHeader() {
   const slot = document.getElementById("header");
   if (!slot) return;
 
-  // RELATIVE path (this is the fix)
-  const url = "./partials/header.html";
+  // Resolve /partials/header.html relative to where header.js lives
+  const url = new URL("../partials/header.html", import.meta.url);
 
   try {
     const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(res.status);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     slot.innerHTML = await res.text();
 
-    // Highlight active nav link
     const path = location.pathname.split("/").pop() || "index.html";
     slot.querySelectorAll(".nav-link").forEach(a => {
       a.classList.toggle(
@@ -26,4 +25,5 @@ export async function loadHeader() {
       `<div class="alert alert-danger m-0">Failed to load header.</div>`;
   }
 }
+
 
