@@ -1,4 +1,4 @@
-import { loadHeader } from "./js/ui.js";
+import { loadHeader } from "./ui.js";
 
 let currentPage = 1;
 const itemsPerPage = 10;
